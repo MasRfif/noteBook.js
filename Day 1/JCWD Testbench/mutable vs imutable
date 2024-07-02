@@ -1,0 +1,32 @@
+let orang = {
+
+    name: "ibnu",
+    address: "mamarika",
+    age: 12,
+
+}
+
+let neworang = orang
+
+// console.log(orang)
+// console.log(neworang)
+
+orang.age = 10
+
+console.log(orang)
+
+// immutable vs re-assign
+
+const cat = {
+    name: "rendy",
+    leg: 4,
+    isSteelier: true,
+}
+
+// cat = {
+    // name:"arik"
+// }
+
+cat.leg = 3 
+
+console.log(cat)
