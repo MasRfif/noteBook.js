@@ -111,7 +111,7 @@ console.log(circleAbs1.draw());
 console.log(circleAbs1);
 console.log(circleAbs1.defaultDrawing);
 console.log(circleAbs1.draw());
-circleAbs1.defaultDrawing = "kucing";
+circleAbs1.defaultDrawing = "kochecnk";
 console.log(circleAbs1.defaultDrawing);
 circleAbs1.radius = "string";
 console.log(circleAbs1.radius);
