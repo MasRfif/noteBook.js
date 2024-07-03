@@ -86,32 +86,56 @@
 
 //abstruction
 
-function CircleAbs(radius) {
-  let defaultDrawing = "Dragon";
-  this.finalDrawing = `ini final drawing ${defaultDrawing}`;
-  this.radius = radius;
-  this.location = { x: 1, y: 5 };
-  this.draw = function () {
-    return this.defaultDrawing;
-  };
+// function CircleAbs(radius) {
+//   let defaultDrawing = "Dragon";
+//   this.finalDrawing = `ini final drawing ${defaultDrawing}`;
+//   this.radius = radius;
+//   this.location = { x: 1, y: 5 };
+//   this.draw = function () {
+//     return this.defaultDrawing;
+//   };
 
-  Object.defineProperty(this, "defaultDrawing", {
-    get: function () {
-      return "defaultDrawing";
-    },
-    set: function (x) {
-      if (typeof x === "number") throw new Error(" this error");
-      defaultDrawing = x;
-    },
-  });
+//   Object.defineProperty(this, "defaultDrawing", {
+//     get: function () {
+//       return defaultDrawing;
+//     },
+//     set: function (x) {
+//       if (typeof x === "number") throw new Error(" this error");
+//       defaultDrawing = x;
+//     },
+//   });
+// }
+
+// let circleAbs1 = new CircleAbs(5);
+// console.log(circleAbs1.draw());
+// console.log(circleAbs1);
+// console.log(circleAbs1.defaultDrawing);
+// console.log(circleAbs1.draw());
+// circleAbs1.defaultDrawing = "kochecnk";
+// console.log(circleAbs1.defaultDrawing);
+// circleAbs1.radius = "string";
+// console.log(circleAbs1.radius);
+
+/* polymorphism */
+//base shape
+
+function shape() {
+  this.getArea = function () {
+    throw new Error("try to find your self bitch i aint helpin");
+  };
 }
 
-let circleAbs1 = new CircleAbs(5);
-console.log(circleAbs1.draw());
-console.log(circleAbs1);
-console.log(circleAbs1.defaultDrawing);
-console.log(circleAbs1.draw());
-circleAbs1.defaultDrawing = "kochecnk";
-console.log(circleAbs1.defaultDrawing);
-circleAbs1.radius = "string";
-console.log(circleAbs1.radius);
+let shape1 = new shape();
+shape1.getArea();
+console.log(shape1);
+
+//circle shape
+
+CircleShape.prototype = object.create(shape.prototype);
+
+CircleShape.prototype.getArea = function () {
+  return Math.PI * this.radius * this.radius;
+};
+let circleshape = new CircleShape(10);
+console.log(circleshape);
+console.log(circleshape.getArea());
