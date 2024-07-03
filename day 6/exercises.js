@@ -31,20 +31,3 @@ function getIntersection(obj1, obj2) {
 const obj1 = { a: 1, b: 2 };
 const obj2 = { a: 1, c: 3 };
 console.log(getIntersection(obj1, obj2));
-
-
-//2.1
-
-function new(a,b){
-    let newObj = {}
-    for (let [key,val] of Object.entries(a)){
-        if (a[key]===b[key])
-            Object.assign(newObj, {[key]; val})
-    } 
-    
-}
-
-return newObj
-
-
-
