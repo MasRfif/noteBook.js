@@ -21,23 +21,61 @@ class linkedlist {
 
   prepend(value) {
     const node = new Node(value);
-
-    if (this.isEmpty()) {
-      this.head = node;
-    } else {
-      node.next = this.head;
-      this.head = node;
-    }
+    node.next = this.head;
+    this.head = node;
     this.size++;
   }
 
-  insert() {}
+  apped(value) {
+    const node = new Node(value);
+    let curr = this.head;
+
+    while (curr.next) {
+      curr = curr.next;
+    }
+    curr.next = node;
+    this.size++;
+  }
+
+  insert(index, value) {
+    const node = new Node(value);
+    let curr = this.head;
+    let count = 0;
+
+    while (curr) {
+      if (count === index) {
+        node.next = curr.next;
+        curr.next = node;
+        this.size++;
+        break;
+      }
+      curr = curr.next;
+      count++;
+    }
+  }
+
+  print() {
+    let listValue = " ";
+
+    if (this.isEmpty()) {
+      console.log("list is empty");
+    } else {
+      let curr = this.head;
+      while (curr) {
+        listvalue += `${curr.value}`;
+        curr = curr.next;
+      }
+    }
+    console.log(listValue);
+  }
 }
 
 const list = new linkedlist();
+
 console.log(list.isEmpty());
 console.log(list.getsize());
 
 list.prepend(10);
+list.prepend(20);
 console.log(list.isEmpty());
 console.log(list.getsize());
