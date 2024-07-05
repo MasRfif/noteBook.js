@@ -84,7 +84,7 @@ const TB = 1.7;
 const Hasil = KalkulasiBBTB(BB, TB);
 console.log(Hasil);
 
-// //5.
+//5.
 
 function splitHuruf(str) {
   return str.split(" ");
