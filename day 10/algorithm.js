@@ -80,25 +80,47 @@ console.log(isPrime(5));
 /*
 Dit: return true if the number given is a power of two, else false
 
-Diket: 
+diket: variable user
 
 Jwb:
 1. first make the variable of the number that we want to define
 2. validate if the number is less than or equal to 0 or not a number
 3. if the number is 0 or 1 it is a power of two
-4. now we make a loop so it can find a number that can find power of two or not power of two
+4. make a loop so it can find a number that can find power of two or not power of two
 5. inside the loop if the loop number % by 0 it will be false or not a power of two
+
 */
+
 function isPowerOfTwo(n) {
-  //o(n)
-  if (n <= 0 || typeof n !== "number") throw new Error("not valid");
-  //o(n)
-  if (n === 0 || n === 1) return true;
+  if (n <= 0 || typeof n !== "number") throw new Error("ERROR");
   while (n % 2 === 0) {
     n = n / 2;
   }
   return n === 1;
 }
 
-console.log(isPowerOfTwo(14)); // false
-console.log(isPowerOfTwo(32)); // true
+console.log(isPowerOfTwo(1));
+console.log(isPowerOfTwo(2));
+console.log(isPowerOfTwo(3));
+console.log(isPowerOfTwo(4));
+console.log(isPowerOfTwo(5));
+console.log(isPowerOfTwo(6));
+console.log(isPowerOfTwo(7));
+console.log(isPowerOfTwo(8));
+console.log(isPowerOfTwo(64));
+console.log(isPowerOfTwo(32));
+
+// is power of two big  O notation : constant
+
+/*
+
+1.validate if the number is a positive if else throw error
+2.make a retur
+
+*/
+function isPowerOfTwo(n) {
+  if (n <= 0 || typeof n !== "number") throw new Error("ERROR");
+  return (n & (n - 1)) === 0;
+}
+
+console.log(isPowerOfTwo());
