@@ -20,4 +20,4 @@ function binarySearch(arr, target) {
   return -1;
 }
 
-console.log(binarySearch([-10, 5, 1, 3, 8], 3));
+// console.log(binarySearch([-10, 5, 1, 3, 8], 3));

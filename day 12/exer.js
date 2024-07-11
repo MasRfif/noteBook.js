@@ -41,11 +41,11 @@ console.log(anagram("hello", "llobe"));
 //4.
 
 function climbStair(num) {
-  const ways1 = [1, 2];
+  const ways = [1, 2];
   for (let i = 2; i <= num; i++) {
     ways[i] = ways[i - 1] + ways[i - 2];
   }
   return ways[num - 1];
 }
 
-console.log(climbStair(3));
+console.log(climbStair(1));

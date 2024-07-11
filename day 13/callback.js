@@ -26,25 +26,28 @@ function mudul(x, y) {
   return x % y;
 }
 
+console.log(computeCB((x, y) => x * y, 10, 60));
 //arrow function
 
-//form 1
-function modulus(x, y) {
-  return x % y;
-}
-//form 2
-const modulus = function modulus(x, y) {
-  return x % y;
-};
-//form 3
-const modulus = function (x, y) {
-  return x % y;
-};
-//form 4
-const modulus = (x, y) => {
-  return x % y;
-};
-//form 5
-const modulus = (x, y) => x % y;
+// //form 1
+// function modulus(x, y) {
+//   return x % y;
+// }
+// //form 2
+// const modulus = function modulus(x, y) {
+//   return x % y;
+// };
+// //form 3
+// const modulus = function (x, y) {
+//   return x % y;
+// };
+// //form 4
+// const modulus = (x, y) => {
+//   return x % y;
+// };
+// //form 5
+// const modulus = (x, y) => x % y;
+// //form 6
+// cosnt moulus = x => x%x
 console.log(computeCB(add, 10, 10));
-console.log(computeCB(mudul, 2, 0));
+console.log(computeCB(mudul, 10, 1));
