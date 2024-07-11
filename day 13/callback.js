@@ -49,5 +49,39 @@ console.log(computeCB((x, y) => x * y, 10, 60));
 // const modulus = (x, y) => x % y;
 // //form 6
 // cosnt moulus = x => x%x
-console.log(computeCB(add, 10, 10));
-console.log(computeCB(mudul, 10, 1));
+// console.log(computeCB(add, 10, 10));
+// console.log(computeCB(mudul, 10, 1));
+
+// let generateParenthesis = function(n) {
+//     let result = [];
+
+//     function add(s, open, close) {
+//       if (s.length === n * 2) {
+//         result.push(s);
+//         return;
+//       }
+
+//       if (open < n) {
+//         add(s + "(", open + 1, close);
+//       }
+//       if (close < open) {
+//         add(s + ")", open, close + 1);
+//       }
+//     }
+
+//     add("", 0, 0);
+//     return result;
+//   }
+
+function getuserinfo(name, callback) {
+  setTimeout(() => {
+    const userinfo = { name: name, age: "16 & 18" };
+    callback(userinfo);
+  }, 10000);
+}
+function greetUser(userinfo) {
+  console.log(`hai ${userinfo.name} you a MINOR you still ${userinfo.age}`);
+}
+getuserinfo("ibnu & alpart", greetUser);
+
+console.log(("B" + "a" + +"a" + "a").toLowerCase());
