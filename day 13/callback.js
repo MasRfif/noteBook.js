@@ -52,26 +52,26 @@ console.log(computeCB((x, y) => x * y, 10, 60));
 // console.log(computeCB(add, 10, 10));
 // console.log(computeCB(mudul, 10, 1));
 
-// let generateParenthesis = function(n) {
-//     let result = [];
+let generateParenthesis = function (n) {
+  let result = [];
 
-//     function add(s, open, close) {
-//       if (s.length === n * 2) {
-//         result.push(s);
-//         return;
-//       }
+  function add(s, open, close) {
+    if (s.length === n * 2) {
+      result.push(s);
+      return;
+    }
 
-//       if (open < n) {
-//         add(s + "(", open + 1, close);
-//       }
-//       if (close < open) {
-//         add(s + ")", open, close + 1);
-//       }
-//     }
+    if (open < n) {
+      add(s + "(", open + 1, close);
+    }
+    if (close < open) {
+      add(s + ")", open, close + 1);
+    }
+  }
 
-//     add("", 0, 0);
-//     return result;
-//   }
+  add("", 0, 0);
+  return result;
+};
 
 function getuserinfo(name, callback) {
   setTimeout(() => {
@@ -84,4 +84,8 @@ function greetUser(userinfo) {
 }
 getuserinfo("ibnu & alpart", greetUser);
 
-console.log(("B" + "a" + +"a" + "a").toLowerCase());
+let a = 10;
+let b = "ayu";
+console.log(a + a + b);
+
+console.log(String(12) === "12");
