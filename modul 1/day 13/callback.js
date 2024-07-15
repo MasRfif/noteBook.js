@@ -89,3 +89,5 @@ let b = "ayu";
 console.log(a + a + b);
 
 console.log(String(12) === "12");
+
+console.log();
