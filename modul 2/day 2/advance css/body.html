@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        height: 1000vh;
+      }
+      .lyr1 {
+        margin-top: 10px;
+        height: 200px;
+        width: 300px;
+        background-color: rgb(95, 64, 35);
+        position: relative;
+      }
+      .lyr2 {
+        height: 180px;
+        width: 280px;
+        background-color: rgb(129, 97, 66);
+        position: absolute;
+      }
+
+      .lyr3 {
+        height: 160px;
+        width: 260px;
+        background-color: rgb(190, 166, 143);
+        position: fixed;
+        top: 10px;
+        left: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="lyr1">
+      <div class="lyr2"><div class="lyr3"></div></div>
+    </div>
+
+    <div class="lyr1-1">
+      <div class="lyr2-2"><div class="lyr3-3"></div></div>
+    </div>
+  </body>
+</html>
