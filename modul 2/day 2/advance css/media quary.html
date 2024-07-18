@@ -6,8 +6,25 @@
     <title>Document</title>
     <style>
       body {
-        background-color: brown;
+        color: beige;
+        text-align: center;
       }
+
+      #grid {
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        max-width: 986px;
+        margin: 0 auto;
+      }
+
+      #grid div {
+        background: brown;
+        padding: 30px;
+      }
+      #grid div:nth-child(even) {
+        background: rgb(167, 125, 35);
+      }
+
       @media (max-width: 768px) {
         body {
           background-color: rgb(128, 91, 43);
@@ -15,5 +32,24 @@
       }
     </style>
   </head>
-  <body></body>
+  <body>
+    <div id="grid">
+      <div class="kotak1">1</div>
+      <div class="kotak2">2</div>
+      <div class="kotak3">3</div>
+      <div class="kotak4">4</div>
+      <div class="kotak5">5</div>
+      <div class="kotak6">6</div>
+      <div class="kotak7">7</div>
+      <div class="kotak6">8</div>
+      <div class="kotak7">9</div>
+    </div>
+    <div class="flex">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </body>
 </html>
