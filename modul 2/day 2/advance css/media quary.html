@@ -12,14 +12,17 @@
 
       #grid {
         display: grid;
-        grid-template-columns: 30% 30% 30%;
+        grid-template-columns: 1fr 30% 1fr;
+        grid-template-rows: 200px 100px 20px 10px;
+        grid-auto-rows: 50px;
         max-width: 986px;
+        gap: 40px;
         margin: 0 auto;
       }
 
       #grid div {
         background: brown;
-        padding: 30px;
+        padding: 40px;
       }
       #grid div:nth-child(even) {
         background: rgb(167, 125, 35);
@@ -44,12 +47,6 @@
       <div class="kotak6">8</div>
       <div class="kotak7">9</div>
     </div>
-    <div class="flex">
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
+    <div class="flex">div*5</div>
   </body>
 </html>

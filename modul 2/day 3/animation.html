@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Golden Ratio Orbit</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .wrapper {
+        position: relative;
+      }
+
+      .planet {
+        width: 100px;
+        height: 100px;
+        background-color: brown;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .moon {
+        width: 10px;
+        height: 10px;
+        background-color: rgb(230, 153, 10);
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      @keyframes golden-orbit {
+        0% {
+          transform: rotate(0deg) translateX(61.8px);
+        }
+        50% {
+          transform: rotate(360deg) translateX(61.8px);
+        }
+        50.01% {
+          transform: rotate(0deg) translateX(98.4px);
+        }
+        100% {
+          transform: rotate(360deg) translateX(98.4px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="planet"></div>
+    </div>
+
+    <script>
+      let wrapper = document.querySelector(".wrapper");
+      let planet = document.querySelector(".planet");
+
+      for (let i = 0; i < 100; i++) {
+        let moon = document.createElement("div");
+        moon.className = "moon";
+        wrapper.appendChild(moon);
+
+        let delay = i * 36; // 36 is the golden angle in degrees
+        moon.style.animation = `golden-orbit 10000ms linear infinite`;
+        moon.style.animationDelay = `${delay}ms`;
+      }
+    </script>
+  </body>
+</html>

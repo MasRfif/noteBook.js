@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @font-face {
+        font-family: "old";
+        src: url(./Ancient\ Medium.ttf);
+      }
+
+      html,
+      body {
+        margin: 0;
+      }
+      * {
+        text-align: center;
+      }
+      .container {
+        display: grid;
+        grid-template-rows: 50px 1fr 50px;
+        grid-template-columns: 200px 1fr 150px;
+        grid-template-areas:
+          "header header header"
+          "sidebar main nav"
+          "footer footer footer";
+        height: 100vh;
+      }
+
+      header {
+        grid-area: header;
+        background-color: #6f4e37;
+        padding: 20px;
+      }
+
+      nav {
+        grid-area: nav;
+        background-color: #a67b5b;
+        padding: 20px;
+      }
+
+      aside {
+        grid-area: sidebar;
+        background-color: #ecb176;
+        padding: 20px;
+        border-right: 1px solid #ccc;
+        align-items: center;
+      }
+
+      main {
+        grid-area: main;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        font-family: "old";
+        font-size: 30px;
+      }
+
+      section {
+        background-color: #b98550;
+        padding: 419px;
+        border: 1px solid #ccc;
+      }
+
+      footer {
+        grid-area: footer;
+        background-color: #9b7e00;
+        padding: 20px;
+        border-top: 1px solid #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>Header</header>
+      <nav>Nav</nav>
+      <main>
+        <section>Holy Grail</section>
+      </main>
+      <aside>Sidebar</aside>
+      <footer>Footer</footer>
+    </div>
+  </body>
+</html>
