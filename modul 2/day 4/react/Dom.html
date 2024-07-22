@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+  <style>
+    .headingstyl {
+      animation-name: example;
+      animation-duration: 4s;
+    }
+
+    @keyframes example {
+      0% {
+        color: red;
+      }
+      25% {
+        color: yellow;
+      }
+      50% {
+        color: blue;
+      }
+      100% {
+        color: green;
+      }
+    }
+  </style>
+  <body>
+    <h1>H3llo</h1>
+
+    <p class="lorem">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo magni
+      excepturi officiis eveniet vero dolorem ullam sapiente, maiores, autem
+      illum cum, commodi rem nulla beatae consectetur! Enim reprehenderit natus
+      consectetur?
+    </p>
+
+    <p class="lorem">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo magni
+      excepturi officiis eveniet vero dolorem ullam sapiente, maiores, autem
+      illum cum, commodi rem nulla beatae consectetur! Enim reprehenderit natus
+      consectetur?
+    </p>
+    <p class="lorem">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis quos sunt
+      dolor placeat dignissimos ex magni error non inventore ad deserunt ut,
+      impedit amet possimus nisi nostrum nam neque tempore. In sint consectetur
+      libero illum iure inventore dolores sunt pariatur earum esse accusantium
+      tempora, iusto optio? Qui dolorum consequatur esse dolorem sapiente
+      distinctio sit error doloremque exercitationem recusandae. Excepturi,
+      nemo? Nobis delectus suscipit at asperiores eaque earum rem quam dolorum
+      ex deserunt ipsa qui voluptatum corrupti facere expedita veniam, ad quidem
+      libero ut! Vero voluptas odit ipsum cum incidunt quam? Assumenda provident
+      dolores deleniti minus ad aperiam ea amet. Ab veniam nihil fugiat vitae
+      porro, quia odit, molestias, dolorem rem qui cumque. Illum minus cum omnis
+      impedit eius. Sapiente, voluptas. Aliquid ut numquam fugit id voluptas est
+      aspernatur eligendi facilis eveniet deleniti vel cum tempore ex velit sunt
+      aut tenetur quos nesciunt ab quisquam, eius consectetur obcaecati sit?
+      Placeat, sunt.
+    </p>
+
+    <h1>Multiplication Calculator</h1>
+    <input type="number" id="num1" placeholder="Number 1" />
+    <input type="number" id="num2" placeholder="Number 2" />
+    <button id="multiply">Multiply</button>
+    <p id="result"></p>
+
+    <button id="MyBtn">me ! click</button>
+    <script>
+      //1.intro
+      //   console.log("cennected");
+
+      //   const head = document.getElementsByTagName("h1");
+      //   console.log(head);
+      //   console.dir(head[0]);
+
+      //   head[0].style.color = "blue";
+      //   head[1].style.color = "brown";
+
+      // 2. selection
+      /*
+
+      1.getElementById
+      2.getElementByTagName
+      3.getElement
+
+      */
+
+      const head = document.getElementsByTagName("h1");
+
+      const button = document.getElementById("MyBtn");
+      button.style.color = "red";
+
+      const parghp = document.getElementsByClassName("lorem");
+      parghp[0].style.fontSize = "36px";
+
+      const Query = document.querySelector("body > p:nth-child(2)");
+      console.log(Query);
+      Query.style.color = "blue";
+
+      button.addEventListener("click", () => {
+        head[0].classList.toggle("headingstyl");
+      });
+
+      let num1 = document.getElementById("num1");
+      let num2 = document.getElementById("num2");
+      let multiplyButton = document.getElementById("multiply");
+
+      multiplyButton.addEventListener("click", () => {
+        let number1 = parseInt(num1.value);
+        let number2 = parseInt(num2.value);
+        let product1 = number1 * number2;
+        let product = number1 * number2;
+        console.log(`Hello world!`);
+      });
+    </script>
+  </body>
+</html>
