@@ -17,7 +17,7 @@ function App() {
           <p>Jakarta, Indonesia</p>
           <p>"Junior Front-end developer."</p>
         </div>
-        <div className="Link">
+        <div className="Link-Box">
           <button className="Link" href="/">
             GitHub
           </button>

@@ -1,0 +1,26 @@
+.add-itinerary {
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.add-itinerary input {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 200px;
+}
+
+.add-itinerary button {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+}
+
+.add-itinerary button:hover {
+  background-color: #45a049;
+}

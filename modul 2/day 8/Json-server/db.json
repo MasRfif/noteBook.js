@@ -1,0 +1,107 @@
+{
+  "userId": "123456789",
+  "name": "Odri",
+  "email": "0dri.gmail.com",
+  "address": {
+    "street": "123 Main St",
+    "city": "New York",
+    "state": "NY",
+    "zipCode": "10001"
+  },
+  "phone": "123-456-7890",
+  "website": "odri.com",
+  "company": {
+    "name": "XYZ Corp",
+    "catchPhrase": "Driving innovation",
+    "bs": "revolutionizing digital experiences"
+  },
+  "education": [
+    {
+      "institution": "University of ABC",
+      "degree": "Bachelor of Science",
+      "fieldOfStudy": "Computer Science",
+      "graduationYear": "2015",
+      "id": "c88f"
+    },
+    {
+      "institution": "XYZ University",
+      "degree": "Master of Science",
+      "fieldOfStudy": "Software Engineering",
+      "graduationYear": "2018",
+      "id": "284c"
+    }
+  ],
+  "workExperience": [
+    {
+      "company": "ABC Corp",
+      "position": "Software Engineer",
+      "startDate": "2018-01-01",
+      "endDate": "2021-12-31",
+      "description": "Developing innovative software solutions for clients.",
+      "id": "5dde"
+    },
+    {
+      "company": "XYZ Corp",
+      "position": "Senior Software Engineer",
+      "startDate": "2022-01-01",
+      "endDate": "Present",
+      "description": "Leading a team to build cutting-edge digital products.",
+      "id": "9710"
+    }
+  ],
+  "skills": [
+    {
+      "id": 1721974781497,
+      "name": "test",
+      "level": "test 2"
+    },
+    {
+      "id": 1721975004628,
+      "name": "React",
+      "level": "Intermediat-Expert"
+    },
+    {
+      "id": 1721975099753,
+      "name": "JavaScript ",
+      "level": "Expertemental"
+    },
+    {
+      "id": 1721975146525,
+      "name": "aku suka",
+      "level": "kamu"
+    },
+    {
+      "id": 1721979348339,
+      "name": "Json",
+      "level": "Master"
+    }
+  ],
+  "posts": [],
+  "comments": [
+    {
+      "id": "1",
+      "text": "a comment about post 1",
+      "postId": null
+    },
+    {
+      "id": "2",
+      "text": "another comment about post 1",
+      "postId": null
+    }
+  ],
+  "comments2": [
+    {
+      "id": "3",
+      "text": "a comment about post 2",
+      "postId": "4"
+    },
+    {
+      "id": "4",
+      "text": "another comment about post 2",
+      "postId": "4"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

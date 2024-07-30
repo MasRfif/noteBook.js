@@ -40,13 +40,16 @@
   margin-bottom: 20px;
 }
 
-.social-links {
-  display: flex;
+.Link-Box {
+  display: block;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;
+  margin: 0 auto;
+  padding-left: 0;
+  padding-right: 0;
 }
 
-.social-link {
+.Link {
   background-color: #333;
   color: #fff;
   border: none;
@@ -54,4 +57,5 @@
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
+  display: block;
 }
